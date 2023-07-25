@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semaforo Boton</title>
+</head>
+
+<body>
+    <div id="conta" class="conta">
+        <div id="containercol">
+            <div id="rojo">
+                <div id="rojoon"></div>
+            </div>
+            <div id="amarillo">
+                <div id="amarilloon"></div>
+            </div>
+            <div id="verde">
+                <div id="verdeon"></div>
+            </div>
+        </div>
+        <div id="barra"></div>
+        <button id="cambio" onclick="cambiocolor()">Cambiar</button>
+    </div>
+   
+    
+    <div class="regresar">
+        <button onclick="window.location.href = 'index.html' " class="boton">Regresar</button>
+    </div>
+
+</body>
+<script>
+
+    var cambio = "green"
+    function cambiocolor() {
+        
+        if(cambio=== "green"){
+            document.getElementById("rojoon").style.backgroundColor = "red";
+            document.getElementById("amarilloon").style.backgroundColor = "rgb(61, 59, 56)";
+            document.getElementById("verdeon").style.backgroundColor = "rgb(61, 59, 56)";
+            cambio = "red"
+        } else if (cambio === "red") {
+            document.getElementById("rojoon").style.backgroundColor = "rgb(61, 59, 56)";
+            document.getElementById("amarilloon").style.backgroundColor = "yellow";
+            document.getElementById("verdeon").style.backgroundColor = "rgb(61, 59, 56)";
+            cambio = "yellow"
+
+        } else if (cambio === "yellow") {
+            document.getElementById("rojoon").style.backgroundColor = "rgb(61, 59, 56)";
+            document.getElementById("amarilloon").style.backgroundColor = "rgb(61, 59, 56)";
+            document.getElementById("verdeon").style.backgroundColor = "green";
+            cambio = "green"
+        } 
+    }
+</script>
+<style>
+        body{
+        background-color: grey;
+    }
+    .conta {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #containercol {
+        background-color: rgb(61, 59, 56);
+        height: 800px;
+        width: 300px;
+        display: grid;
+        margin-top: 20px;
+        border-radius: 20px;
+        box-shadow: 2px 2px 2px grey;
+    }
+
+    #rojo {
+
+        background-color: rgb(61, 59, 56)red;
+    }
+
+    #amarillo {
+
+        background-color: rgb(61, 59, 56);
+    }
+
+    #verde {
+
+        background-color: rgb(61, 59, 56);
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+
+    }
+
+    #rojoon {
+        position: relative;
+        border: 2px solid black;
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+        top: 10%;
+        left: 16%;
+    }
+
+    #amarilloon {
+        position: relative;
+        border: 2px solid black;
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+        top: 10%;
+        left: 16%;
+
+    }
+
+    #verdeon {
+        position: relative;
+        border: 2px solid black;
+        height: 200px;
+        border-radius: 50%;
+        width: 200px;
+        top: 10%;
+        left: 16%;
+    }
+
+    #barra {
+        position: relative;
+        height: 100px;
+        width: 50px;
+        background-color: rgb(61, 59, 56);
+    }
+
+    .regresar {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .boton {
+        background-color: white;
+        /* Green */
+        border: none;
+        color: black;
+        padding: 16px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        margin-bottom: 20px;
+    }
+
+    .boton:hover {
+        background-color: red;
+        color: white;
+    }
+
+    #cambio {
+        margin-top: 10px;
+        height: 50px;
+        width: 100px;
+        font-size: 20px
+    }
+</style>
+
+</html>

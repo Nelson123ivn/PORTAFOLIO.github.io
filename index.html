@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <title>Mis trabajos</title>
+</head>
+
+<body>
+    <section class="todo">
+    <div class="encabezado">
+        <h1>PORTAFOLIO</h1>
+    </div>
+
+    <div class="container">
+        <div class="caja">
+            <div class="paginaquiensoy">
+                <a href="pagina quien soy/quiensoy.html">
+                    <img src="img/quiensoy.png" alt="">
+                    <p class="tetx">Pagina Quien soy</p>
+                </a>
+            </div>
+        </div>
+        <div class="caja">
+            <div class="hojadevida">
+                <a href="Hoja de vida/hojadevida.html">
+                    <img src="img/hojadevida.png" alt="">
+                    <p class="tetx">Hoja de vida</p>
+                </a>
+            </div>
+        </div>
+        <div class="caja">
+            <div class="calendario">
+                <a href="Calendario/calendario.html">
+                    <img src="img/calendario.png" alt="">
+                    <p class="tetx">Calendario</p>
+                </a>
+            </div>
+        </div>
+        <div class="caja">
+            <div class="factura">
+                <a href="factura/factura.html">
+                    <img src="img/factura.png" alt="">
+                    <p class="tetx">Factura</p>
+                </a>
+            </div>
+        </div>
+        <div class="caja">
+            <div class="semaforo">
+                <a href="Semaforo.html">
+                    <img src="img/semaforo.png" alt="">
+                    <p class="tetx">Semaforo</p>
+                </a>
+            </div>
+        </div>
+        <div class="caja">
+            <div class="calculadora">
+                <a href="calculadora.html">
+                    <img src="img/calculadora.png" alt="">
+                    <p class="tetx">Calculadora</p>
+                </a>
+            </div>
+        </div>
+        <div class="caja">
+            <div class="galeria">
+                <a href="Galeria/Galeria.html">
+                    <img src="img/galeria.png" alt="">
+                    <p class="tetx">Galeria</p>
+                </a>
+            </div>
+        </div>
+        <div class="caja">
+            <div class="veterinaria">
+                <a href="Veterinaria/index.html">
+                    <img src="img/veterinaria.jpg" alt="">
+                    <p class="tetx">Veterinaria</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+</body>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100;200;300;400;500;600;700;800;900&family=Inter:wght@100;200;300;400;500;600;700;800&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+    /* font-family: 'Geologica', sans-serif; */
+    /*  font-family: 'Inter', sans-serif; */
+    /* font-family: 'Righteous', cursive; */
+    /* font-family: 'Permanent Marker', cursive; */
+    body {
+        display:  flex;
+        justify-content: center;
+        margin: 0px;
+        padding: 0px;
+        background: pink;
+    }
+
+    .encabezado {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        background-color: #ff7777;
+    }
+
+    .encabezado h1 {
+        font-family: 'Righteous', cursive;
+        font-weight: 200;
+        font-size: 70px;
+    }
+
+    .encabezado h3 {
+        font-family: 'Righteous', cursive;
+        font-size: 30px;
+        font-weight: 200;
+    }
+
+    @media only screen and (max-width: 685px) {
+        .encabezado h1 {
+            font-size: 60px;
+        }
+    }
+
+    @media only screen and (max-width: 300px) {
+        .encabezado h1 {
+            font-size: 50px;
+        }
+    }
+
+    .container {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-left: 15%;
+        margin-right: 15%;
+        justify-content: space-between;
+        flex-basis: 25%;
+
+    }
+
+    @media only screen and (max-width: 685px) {
+        .container {
+            justify-content: center;
+        }
+    }
+
+    .caja {
+        height: 200px;
+        width: 200px;
+        margin: 20px;
+
+    }
+
+    img {
+        height: 200px;
+        width: 200px;
+    }
+
+    p {
+        position: relative;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 25px;
+        bottom: 30px;
+        opacity: 0;
+    }
+
+
+    .caja:hover .tetx {
+        opacity: 1;
+        filter: none;
+        color: rgb(0, 0, 0);
+    }
+
+
+    @media screen and (max-width : 420px) {
+
+        .wrapper ul {
+            margin-left: 70px;
+        }
+
+        .wrapper ul li {
+            margin-top: 10px;
+        }
+
+
+        .wrapper ul li.google {
+            margin-left: 60px;
+        }
+    }
+
+    @media screen and (max-width:340px) {
+
+        .wrapper ul {
+            margin-left: 50px;
+        }
+
+        .wrapper ul li {
+            margin: 10px;
+        }
+
+        .wrapper ul li.google {
+            margin-left: 45px;
+        }
+    }
+
+    @media screen and (max-width:290px) {
+        .wrapper ul {
+            margin-left: 45px;
+        }
+
+        .wrapper ul li {
+            margin: 10px;
+        }
+
+        .wrapper ul li.google {
+            margin-left: 10px;
+        }
+
+        .wrapper ul li.whatsapp {
+            margin-left: 50px;
+        }
+    }
+
+    @media screen and (max-width:205px) {
+
+        .wrapper ul li.whatsapp {
+            margin-left: 10px;
+        }
+    }
+</style>
+
+</html>

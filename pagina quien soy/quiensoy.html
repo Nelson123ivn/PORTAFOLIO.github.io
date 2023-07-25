@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Pagina</title>
+</head>
+
+<body>
+    <div class="barrasuperior">
+        <div class="nombre">Nelson Ivan Santos</div>
+        <div class="inicio"><a href="#cuadro1">Inicio</a></div>
+        <div class="quiensoy"><a href="#cuadro2">¿Quien Soy?</a></div>
+        <div class="proyectos"><a href="#cuadro3">Proyectos</a></div>
+    </div>
+
+    <div class="barraprimera" id="cuadro1">
+        <div class="img1"><img src="./imagenes/imagen.png.avif"></div>
+
+        <div class="texto">
+            <h2>¿Quien Soy?</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit veritatis a autem
+                sed dignissimos commodi, voluptas incidunt voluptatibus cum, quia neque nulla consequatur
+                laborum accusamus, perspiciatis odio nemo minus vel!. Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Obcaecati, debitis perspiciatis non iste voluptatibus facere animi autem minus,
+                quas nihil quibusdam atque repellat cupiditate accusantium! Molestiae quaerat aliquid molestias nihil?
+            </p>
+            <button class="boton1">Leer mas</button>
+        </div>
+    </div>
+
+    <div class="barrasegunda" id="cuadro2">
+        <div class="img2"><img src="./imagenes/imagen2.png.avif " width="300" height="300"></div>
+        <div class="texto2">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam doloribus earum consequuntur
+                eaque accusamus corporis accusantium iusto facilis, fuga expedita impedit, doloremque aut ipsum maxime.
+                Nemo nobis molestias quae quisquam.</p>
+            <h1 class="nombre1">- Nelson Ivan Santos</h1>
+        </div>
+    </div>
+
+    <div>
+        <h2 class="titulo">Mis proyectos</h2>
+        <div class="barratercero" id="cuadro3">
+            <div class="proyectos2">
+                <div class="figura">
+                    <div class="foto"><img src="./imagenes/2705118.png" width="300" height="300"></div>
+                    <h3 class="textoa">Tener una ingenieria</h3>
+                    <p class="textoa">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Nesciunt vero corporis incidunt saepe qui commodi quasi neque
+                        veniam quam, aspernatur est beatae maxime animi sed reiciendis
+                        mollitia ducimus veritatis repellendus?.</p>
+                    <button class="botona">Ver Mas</button>
+                </div>
+                <div class="figura">
+                    <div class="foto"><img src="./imagenes/png-clipart-airplane-travel-flight-towel-cartoon-global-travel-cartoon-character-blue-removebg-preview.png" width="300" height="300"></div>
+                    <h3 class="textoa">Viajar</h3>
+                    <p class="textoa">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Nesciunt vero corporis incidunt saepe qui commodi quasi neque
+                        veniam quam, aspernatur est beatae maxime animi sed reiciendis
+                        mollitia ducimus veritatis repellendus?</p>
+                    <button class="botona">Ver Mas</button>
+                </div>
+                <div class="figura">
+                    <div class="foto"><img src="./imagenes/metas.png" width="300" height="300"></div>
+                    <h3 class="textoa">Cumplir Metas</h3>
+                    <p class="textoa">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Nesciunt vero corporis incidunt saepe qui commodi quasi neque
+                        veniam quam, aspernatur est beatae maxime animi sed reiciendis
+                        mollitia ducimus veritatis repellendus?</p>
+                    <button class="botona">Ver Mas</button>
+                </div>
+                <div class="figura">
+                    <div class="foto"><img src="./imagenes/png-transparent-brand-public-relations-business-support-group-text-public-relations-logo-removebg-preview.png" width="300" height="300"></div>
+                    <h3 class="textoa">Aportar a la sociedad</h3>
+                    <p class="textoa">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Voluptatum perferendis similique pariatur facilis! Tenetur
+                        id ut, voluptatum reiciendis maxime maiores cumque, non inventore
+                        rem atque veniam unde quae a?</p>
+                    <button class="botona">Ver Mas</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Copyright @ Nelson Ivan Santos Cacua</p>
+    </footer>
+</body>
+
+</html>
+<style>
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.barrasuperior {
+    z-index: 1;
+    margin: 0%;
+    padding: 0%;
+    height: 50px;
+    width: 100%;
+    background-color: rgb(240, 58, 58);
+    display: grid;
+    grid-template-columns: 76% 6% 9% 6%;
+    position: fixed;
+}
+
+.nombre {
+    font-size: 25px;
+    font-style: arial;
+    color: aliceblue;
+    margin: 10px 0px 0px 60px;
+}
+
+.inicio {
+    font-size: larger;
+    font-style: oblique;
+    color: aliceblue;
+    margin: 15px 0px 0px 0px;
+}
+
+.quiensoy {
+    font-size: larger;
+    font-style: oblique;
+    color: aliceblue;
+    margin: 15px 0px 0px 0px;
+}
+
+.proyectos {
+    font-size: larger;
+    font-style: oblique;
+    color: rgb(35, 115, 184);
+    margin: 15px 0px 0px 0px;
+}
+
+
+.barraprimera {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    padding: 4rem 6%;
+}
+
+.barraprimera .img1{
+    flex:  1 1 20rem;
+}
+
+.barraprimera .texto{
+    flex: 1 1 40rem;
+    text-align: left;
+    font-size: 28px;
+    color: #080808;
+}
+
+.boton1 {
+    padding: 10px;
+    background-color: #2363ee;
+    border: none;
+    border-radius: 4px;
+    color: #333;
+    bottom: 20px;
+    right: 30px;
+    cursor: pointer;
+}
+
+.boton1:hover {
+    background-color: aqua;
+}
+
+.barrasegunda {
+    width: 100%;
+    height: 600px;
+    background-color: rgb(12, 134, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.img2 img {
+    border: 2px solid black;
+    border-radius: 50%;
+    margin-top: 50px;
+}
+
+.texto2 {
+    text-align: center;
+    align-items: center;
+    font-size: 28px;
+    font-style: oblique;
+    color: #080808;
+}
+
+.nombre1 {
+    font-size: 25px;
+    text-align: center;
+    align-items: center;
+}
+.barratercero{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 16px;
+}
+
+.botona{
+    padding: 10px;
+    background-color: #2363ee;
+    border: none;
+    border-radius: 4px;
+    color: #333;
+    bottom: 20px;
+    right: 30px;
+    cursor: pointer; 
+}
+.botona:hover {
+    background-color: aqua;
+}
+
+.titulo{
+    text-align: center;
+    font-size: 40px;
+    font-style: oblique;
+    color: #080808;
+}
+
+.proyectos2{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 16px;
+    padding: 2rem 6%;
+}
+
+.textoa{
+    color: #080808;
+    font-style: oblique;
+    font-size: 20px;
+}
+.proyectos2 .figura{
+    background: rgb(37, 209, 48);
+    border: .1px solid rgb(0, 0, 0, .2);
+    border-radius: 50px;
+    text-align: center;
+    position: relative;
+}
+
+footer{
+    background-color:  rgb(240, 58, 58) ;
+    color: #080808;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0px 10px;
+}
+
+<<<<<<< HEAD
+footer p{
+    text-align: right;
+    color: #080808;
+    font-size: 25px;
+}
+</style>
+=======
+    .imagen {
+        display: flex;
+        width: 0%;
+        height: 250px;
+        border: 2px solid white;
+        align-items: center;
+        padding: 12%;
+    }
+
+    .texto_quiensoy {
+        width: 100%;
+        color: black;
+        padding-top: 40px;
+    }
+
+    #quien_soy {
+        font-size: 2em;
+        color: red;
+        margin-bottom: 10px;
+        font-size: 5ch;
+    }
+
+    #contenido {
+        font-size: 1.2em;
+        margin-bottom: 20px;
+        margin-right: 90px;
+    }
+
+    #bquien {
+        background-color: red;
+        color: white;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        font-size: 1.2em;
+    }
+
+
+    .img_biografia {
+        border-radius: 50%;
+        margin: 10px;
+        width: 200px;
+
+    }
+
+    .container_bio {
+        align-items: center;
+        text-align: center;
+        background-color: red;
+        width: 100%;
+        color: #f8f8f8;
+
+    }
+
+    .texto_bio {
+        margin-left: 90px;
+        margin-right: 90px;
+        font-size: 2ch;
+        text-align: center;
+        margin-bottom: 25px;
+        color: white;
+
+    }
+
+    .container_pro {
+        align-items: center;
+        text-align: center;
+
+    }
+
+
+    article.card {
+        min-height: 450px;
+        max-width: 350px;
+        background-color: #f8f8f8;
+        border-radius: 8px;
+        margin: 1rem;
+        box-shadow: 0 0 12px #d7d7d7;
+
+    }
+
+    .header-card img {
+        border-radius: 8px 8px 0;
+        max-height: 200px;
+        height: 200px;
+        width: 100%;
+    }
+
+    .titulo_pro {
+        font-family: 'Anton', sans-serif;
+        font-size: 5ch;
+    }
+
+    .categoria_card {
+        margin-top: 1rem;
+    }
+
+    .categoria_card span {
+        background-color: #25c4d8;
+        color: white;
+        padding: .2rem .5rem;
+        border-radius: 4px;
+    }
+
+    .card footer {
+        padding: 0 1rem;
+    }
+
+    .cardward {
+        display: flex;
+        flex-flow: wrap;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .boton_car {
+        background-color: red;
+        color: white;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        font-size: 1.2em;
+    }
+
+    .piedepagina {
+        background: rgb(96, 90, 106);
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 10px 3%;
+    }
+
+    .regresar {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .boton {
+        background-color: white;
+        /* Green */
+        border: none;
+        color: black;
+        padding: 16px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        margin-bottom: 20px;
+    }
+
+    .boton:hover {
+        background-color: red;
+        color: white;
+    }
+</style>
+
+</html>
+>>>>>>> 1294d5281915b5642d1c80c65ebe071aee90fa67

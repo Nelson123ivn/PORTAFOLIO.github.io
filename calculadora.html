@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="estiloscalculadora.css">
+</head>
+
+<body>
+    <form name="calculadora">
+        <table>
+            <tr>
+                <td colspan="5"><input type="textfield" name="ans" value=""></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="1" onClick="document.calculadora.ans.value+='1'"></td>
+                <td><input type="button" value="2" onClick="document.calculadora.ans.value+='2'"></td>
+                <td><input type="button" value="3" onClick="document.calculadora.ans.value+='3'"></td>
+                <td><input type="button" value="+" onClick="document.calculadora.ans.value+='+'"></td>
+                <td><input type="button" value="-" onClick="document.calculadora.ans.value+='-'"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="4" onClick="document.calculadora.ans.value+='4'"></td>
+                <td><input type="button" value="5" onClick="document.calculadora.ans.value+='5'"></td>
+                <td><input type="button" value="6" onClick="document.calculadora.ans.value+='6'"></td>
+                <td><input type="button" value="*" onClick="document.calculadora.ans.value+='*'"></td>
+                <td><input type="button" value="/" onClick="document.calculadora.ans.value+='/'"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="7" onClick="document.calculadora.ans.value+='7'"></td>
+                <td><input type="button" value="8" onClick="document.calculadora.ans.value+='8'"></td>
+                <td><input type="button" value="9" onClick="document.calculadora.ans.value+='9'"></td>
+                <td><input type="button" value="√" onClick="calculateSquareRoot()"></td>
+                <td><input type="button" value="^" onClick="calculatePower()"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="0" onClick="document.calculadora.ans.value+='0'"></td>
+                <td><input type="button" value="." onClick="document.calculadora.ans.value+='.'"></td>
+                <td><input type="reset" value="c"></td>
+                <td colspan="2"><input type="button" value="=" onClick="document.calculadora.ans.value=eval(document.calculadora.ans.value)"></td>
+            </tr>
+        </table>
+
+    </form>
+
+    <script>
+
+        function calculateSquareRoot() {
+            var ans = document.calculadora.ans;
+            var value = ans.value;
+            ans.value = Math.sqrt(eval(value));
+        }
+
+        function calculatePower() {
+            var ans = document.calculadora.ans;
+            var value = ans.value;
+            ans.value += '**';
+        }
+    </script>
+</body>
+<style>
+    body {
+        margin: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: cornflowerblue;
+        height: 100vh;
+    }
+
+    table {
+        border: 2px solid black;
+        background-color: rgb(255, 0, 0);
+
+        padding: 5px;
+    }
+<<<<<<< HEAD
+    input{
+        font-size: 50px;
+        height: 100%;
+        width: 100%;
+        box-shadow: 3px 3px black;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        box-sizing: border-box;
+=======
+
+    .boton {
+        background-color: white;
+        /* Green */
+        border: none;
+        color: black;
+        padding: 16px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        margin-bottom: 20px;
+    }
+
+    .boton:hover {
+        background-color: red;
+        color: white;
+>>>>>>> 1294d5281915b5642d1c80c65ebe071aee90fa67
+    }
+</style>
+
+</html>

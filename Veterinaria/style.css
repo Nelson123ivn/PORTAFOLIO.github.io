@@ -1,0 +1,153 @@
+body{
+  background-image: url(depositphotos_449406752-stock-illustration-vector-seamless-pattern-illustration-dog.jpg);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+label {
+  margin-right: 10px;
+}
+
+.titulo {
+  text-align: center ;
+  font-size: 50px;
+  width: 90%;
+  background-color: rgb(0 211 255);
+  border: 3px solid black;
+  margin-top: 2%;
+}
+.titu{
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-content: center;
+}
+
+.citas {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  border: solid black 2px;
+  justify-content: space-between
+}
+
+#notificacion {
+  color: white;
+  background-color: red;
+  border: 1px solid black;
+  border-radius: 10px;
+  position: fixed;
+  visibility: hidden;
+  top: 20px;
+  left: 50%;
+  padding: 10px;
+}
+
+#notify {
+  padding: 10px;
+}
+
+#agg {
+  font-size: 25px;
+  /* width: 90%; */
+  border: 3px solid black;
+  padding: 1%;
+  border-radius: 5px;
+}
+
+#contenedorfiltros{
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+  background-color: aliceblue;
+}
+
+table {
+  width: 80%;
+  border-collapse: separate;
+  border-spacing: 0px;
+}
+
+th,
+tr,
+td {
+  border: 1px solid blue;
+  text-align: center;
+  padding: 10px;
+}
+
+div {
+  display: flex;
+  justify-content: center;
+}
+
+.modal-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+
+#exito {
+  display: none;
+  color: greenyellow;
+}
+
+.error {
+  color: #dc3545;
+  font-size: 0.875em;
+  font-family: var(--bs-body-font-family);
+  display: none;
+}
+
+
+label {
+  margin-right: 10px;
+  font-size: larger;
+}
+
+#sintomas {
+  height: 50px;
+}
+
+#contenedor{
+  width: 90%;
+  padding: 2%;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  background-color: rgb(255, 255, 255);
+  border: 3px solid black;
+  border-radius: 5px;
+}
+
+.modal-body {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  text-align: left;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+#titulo2 {
+  width: 90%;
+  margin: 0;
+  background-color: rgb(0 211 255);
+  align-items: center;
+  text-align: center;
+  border: 3px solid black;
+  border-radius: 5px;
+}
+
+.titu2{
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+

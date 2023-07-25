@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+
+    <div class="container">
+        <div class="circle red" id="rojo_circulo"></div>
+        <div class="circle"     id="amarrillo_circulo"></div>
+        <div class="circle"     id="verde_circulo"></div>
+    </div>
+
+    <div class="container1">
+        <div class="cambiar" id="red-circle"></div>
+        <div class="cambiar" id="yellow-circle"></div>
+        <div class="cambiar" id="green-circle"></div>
+    </div>
+
+   <style>
+    body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            background: #ffffff;
+        }
+
+        
+
+
+        .container1 {
+            margin-right: 30px;
+            border-radius: 20px;
+            height: 400px;
+            width: 160px;
+            background-color: rgb(125, 190, 255);
+        }
+
+        .container {
+            border-radius: 20px;
+            margin: 10px;
+            height: 400px;
+            width: 160px;
+            background-color: rgb(125, 190, 255);
+        }
+
+        .circle {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin: 20px;
+            border: 2px solid white;
+        }
+
+        .cambiar {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin: 20px;
+            border: 2px solid rgb(255, 255, 255);
+        }
+
+        .red {
+            background-color: red;
+        }
+
+        .yellow {
+            background-color: rgb(255, 208, 0);
+        }
+
+        .green {
+            background-color: rgb(3, 165, 3);
+        }
+
+        button{
+            margin-right: 20px;
+        }
+
+   </style>
+
+<button onclick="changeColor()">CAMBIAR</button>
+
+<script>
+    function cambiarColor() {
+        let redCircle = document.getElementById("rojo_circulo");
+        let yellowCircle = document.getElementById("amarrillo_circulo");
+        let greenCircle = document.getElementById("verde_circulo");
+
+        if (redCircle.classList.contains("red")) {
+            redCircle.classList.remove("red");
+            yellowCircle.classList.add("yellow");
+        } else if (yellowCircle.classList.contains("yellow")) {
+            yellowCircle.classList.remove("yellow");
+            greenCircle.classList.add("green");
+        } else if (greenCircle.classList.contains("green")) {
+            greenCircle.classList.remove("green");
+            redCircle.classList.add("red");
+        }
+    }
+
+<<<<<<< HEAD
+    let currentColor = 2;
+        let cambiar = document.getElementsByClassName("cambiar");
+=======
+    .boton:hover {
+        background-color: red;
+        color: white;
+    }
+>>>>>>> 1294d5281915b5642d1c80c65ebe071aee90fa67
+
+        function changeColor() {
+            cambiar[currentColor].classList.remove(getColorClass(currentColor));
+            currentColor = (currentColor + 1) % cambiar.length;
+            cambiar[currentColor].classList.add(getColorClass(currentColor));
+        }
+
+        function getColorClass(index) {
+            if (index === 0) {
+                return "red";
+            } else if (index === 1) {
+                return "yellow";
+            } else if (index === 2) {
+                return "green";
+            }
+        }
+
+
+    setInterval(cambiarColor, 1000);
+</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hola</title>
+</head>
+
+<body>
+
+    <div class="gallery">
+        <div class="preview-container"><img src="./default.png" alt="Imagen seleccionada" width="150px" height="150px" class="preview-image"></div>
+        <div class="row"></div>
+    </div>
+    <script>
+        const imagenes = [
+        "./icon1.jpg",
+        "./icon2.jpg", 
+        "./icon3.png", 
+        "./icon4.jpeg", 
+        "./icon5.jpg", 
+        "./icon6.jpg", 
+        "./icon7.jpg", 
+        "./icon8.jpg", 
+        "./icon9.jpg", 
+        "./icon10.jpg", 
+        "./icon11.png", 
+        "./icon12.jpg"
+        ];
+
+        let cont = 1;
+        for(let i = 0; i < imagenes.length; i++) {
+            document.querySelector(
+                ".row"
+            ).innerHTML += `<img src="${imagenes[i]}" class="gallery-image">`;
+        }
+
+        window.addEventListener('DOMContentLoaded', function () {
+            var images = document.querySelectorAll('.gallery-image');
+            var previewContainer = document.querySelector('.preview-container');
+
+            images.forEach(function (image) {
+                image.addEventListener('click', function () {
+                    var src = this.getAttribute('src');
+                    var previewImage = previewContainer.querySelector('img');
+                    previewImage.setAttribute('src', src);
+                });
+            });
+        });
+    </script>
+
+</body>
+<style>
+
+    body {
+        margin: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: cornflowerblue;
+        height: 100vh;
+    }
+    
+    .gallery {
+        width: 800px;
+        margin: 0 auto;
+    }
+    
+    .imagenes{
+        border: 2px solid black;
+    }
+
+
+    .row {
+        display: grid;
+        grid-template-columns: repeat(4,25%);
+        width: 100%;
+    }
+
+    .gallery-image {
+        cursor: pointer;
+        width: 90%;
+        height: 90%;
+    }
+
+<<<<<<< HEAD
+    .preview-container {
+        margin-top: 20px;
+        margin-left: 295px;
+=======
+    .boton:hover {
+        background-color: red;
+        color: white;
+>>>>>>> 1294d5281915b5642d1c80c65ebe071aee90fa67
+    }
+
+</style> 
+</html>
